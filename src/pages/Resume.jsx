@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "../CSS/Resume.css";
 
 export default function Resume() {
   return (
-    <section className="container" style={{ padding: "60px 0" }}>
+    <section className="container resume-container" style={{ padding: "60px 0" }}>
       <motion.div
-        className="card"
+        className="card resume-card"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -37,6 +38,7 @@ export default function Resume() {
 
         {/* Profile Header */}
         <motion.div
+          className="resume-header"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -67,6 +69,7 @@ export default function Resume() {
           </div>
 
           <motion.div
+            className="resume-summary-box"
             whileHover={{ scale: 1.05 }}
             style={{
               background: "linear-gradient(135deg, #00b4ff44, #0b0b0b)",
@@ -90,6 +93,7 @@ export default function Resume() {
 
         {/* Experience Section */}
         <motion.div
+          className="resume-section-box"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -174,6 +178,7 @@ export default function Resume() {
 
         {/* Education Section */}
         <motion.div
+          className="resume-section-box"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
@@ -286,6 +291,7 @@ export default function Resume() {
 
         {/* PDF Viewer */}
         <motion.div
+          className="resume-pdf"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}

@@ -131,3 +131,44 @@
   font-weight: 500;
   letter-spacing: 0.3px;
 }
+
+/* --- Mobile Responsive Overrides --- */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 20px 0 !important;
+  }
+
+  .resume-card {
+    padding: 20px 15px !important;
+  }
+
+  .resume-header {
+    flex-direction: column;
+    padding: 15px !important;
+    gap: 15px !important;
+  }
+  
+  .resume-summary-box {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  .resume-section-box {
+    padding: 15px !important;
+  }
+  
+  /* Make lists/content stack if needed */
+  .resume-section-box ul li div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .resume-section-box ul li div span {
+    margin-top: 4px;
+  }
+  
+  /* PDF Viewer Height */
+  .resume-pdf iframe {
+    height: 400px !important;
+  }
+}

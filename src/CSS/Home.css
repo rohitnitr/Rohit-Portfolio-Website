@@ -67,3 +67,75 @@
   gap: 1.5rem;
   justify-content: center; /* ensures icons are centered */
 }
+
+/* --- Mobile / Responsive Tweaks --- */
+@media (max-width: 900px) {
+  .home-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .home-top {
+    flex-direction: column-reverse; /* Info on top of photo on mobile usually looks better or vice versa depending on design. Let's stick to column for now, so photo then info? Or maybe reverse so name comes first? Let's do reverse so name is seen first. */
+    gap: 3rem;
+  }
+  
+  .photo-container {
+    flex: unset; /* Remove fixed flex basis */
+    width: 280px;
+    height: 280px;
+  }
+  
+  .photo-ring {
+    width: 260px;
+    height: 260px;
+  }
+  
+  .photo-frame {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .home-info {
+    min-width: 100%; /* Allow it to shrink/grow */
+    text-align: center;
+    align-items: center;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+  }
+  
+  .typing-effect {
+    white-space: normal; /* Allow wrapping */
+    height: auto;
+    border-right: none; /* remove cursor if wrapping */
+    animation: none; /* disable typing animation on mobile if it breaks layout */
+    text-align: center;
+  }
+
+  .profession-tags {
+    justify-content: center;
+  }
+  
+  .info-cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-container {
+    width: 240px;
+    height: 240px;
+  }
+  .photo-ring {
+    width: 220px;
+    height: 220px;
+  }
+  .photo-frame {
+    width: 200px;
+    height: 200px;
+  }
+  .home-title {
+    font-size: 1.8rem;
+  }
+}
