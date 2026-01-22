@@ -297,7 +297,7 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="/resume.pdf"
+            src="/Rohit_Poddar_Resume_2026.pdf"
             title="Rohit Poddar Resume"
             style={{
               width: "100%",
@@ -310,7 +310,7 @@ export default function Resume() {
 
         {/* Download Button */}
         <motion.a
-          href="/resume.pdf"
+          href="/Rohit_Poddar_Resume_2026.pdf"
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
